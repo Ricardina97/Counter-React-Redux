@@ -1,6 +1,9 @@
 import React from 'react';
 import {useSelector} from 'react-redux';
 import {Link} from 'react-router-dom'; //Link that will redirect the user to a single post page
+import {PostAuthor} from './PostAuthor';
+import {TimeAgo} from './TimeAgo';
+import {ReactionButtons} from './ReactionButtons';
 
 export const SinglePostPage = ({ match }) => {
     //match is a prop that contains the URL information, match.params is to extract the id so we can search for it
@@ -25,7 +28,12 @@ export const SinglePostPage = ({ match }) => {
         <section>
             <article className="post">
                 <h2>{post.title}</h2>
+                <div>
+                    <PostAuthor userId={post.user}/>
+                    <TimeAgo timestamp={post.date}/>
+                </div>
                 <p className="post-content">{post.content}</p>
+                <ReactionButtons post={post}/>
                 <Link to={`/editPost/${post.id}`} className="button">
                     Edit Post
                 </Link>
