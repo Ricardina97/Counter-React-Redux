@@ -9,7 +9,7 @@ I followed a tutorial from the official redux website about the basics of React 
   - Each post can feature a user and how long ago did the user made the post;
   - The client can see each post fully on a specific single page;
   - The client can also edit any post;
-  - each post can receive different reactions (like Slack).
+  - Each post can receive different reactions (like Slack).
  
 
 ## Demo
