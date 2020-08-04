@@ -13,5 +13,4 @@ I followed a tutorial from the official redux website about the basics of React 
  
 
 ## Demo
-
-![Demo](https://filebin.net/cnvvyst90lp06y47/SocialMediaapp.gif?t=96f14uey)
+![Demo](https://s7.gifyu.com/images/5124B253-1A71-490B-ABE1-943B10CFF298.gif)
